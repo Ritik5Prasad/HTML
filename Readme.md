@@ -37,8 +37,8 @@ This repository is organized into sections, each focusing on key HTML concepts a
 ## How to Use This Repository
 
 1. **Clone the Repository**
-   ```bash
-git clone https://github.com/your-username/html-tutorial.git```
+   ```bash git clone https://github.com/your-username/html-tutorial.git ```
+
 
 Navigate to Specific Sections
 - Each section is organized into folders for easy navigation. Start with the - Basic file and progress through the levels at your own pace.
