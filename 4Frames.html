@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+</head>
+
+<body>
+
+    <!-- Deprecated frameset with two frames -->
+    <frameset rows="50%,50%">
+        <!-- First frame -->
+        <frame src="./10Program.html" name="frame1" frameborder="0" />
+        <!-- Second frame -->
+        <frame src="./1Basic.html" name="frame2" frameborder="0" />
+    </frameset>
+
+    <!-- Modern iframe as an alternative to frames -->
+    <!-- <iframe src="https://ritik-portfolio-sand.vercel.app" width="100%" height="300" allow="" frameborder="0"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DfCYRzFrIvA?si=oNgnJXNEyr8TcqUx"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Explanation -->
+    <p>
+        The above code demonstrates the use of frames and iframes in HTML:
+    <ul>
+        <li>
+            <strong>Deprecated Frameset:</strong> The <code>&lt;frameset&gt;</code> tag divides the browser window into
+            two rows, each containing a separate HTML document loaded using the <code>&lt;frame&gt;</code> tag. This
+            approach is deprecated in HTML5.
+        </li>
+        <li>
+            <strong>Modern Iframe:</strong> The <code>&lt;iframe&gt;</code> tag allows embedding another HTML document
+            within the current document. It provides similar functionality to frames but within a more controlled and
+            contained environment. This approach is preferred over frames in modern web development.
+        </li>
+    </ul>
+    </p>
+
+</body>
+
+</html>

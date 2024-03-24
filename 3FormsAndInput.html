@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input</title>
+    <style>
+        /* Style to arrange form elements vertically */
+        form div {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function onFormSubmit(event) {
+             event.preventDefault();
+            console.log(event)
+            const formData = new FormData(event.target);
+            console.log(formData)
+            // Loop through formData entries and log each one
+            for (const pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Form for futuristic registration -->
+    <form onsubmit="onFormSubmit(event)">
+        <div>
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <!-- Email input for email address -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <!-- Password input for password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <!-- Select dropdown for gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <!-- Textarea for bio -->
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <div>
+            <!-- Radio buttons for subscription type -->
+            <fieldset>
+                <legend>Subscription Type:</legend>
+                <label><input type="radio" name="subscription" value="basic">Basic</label>
+                <label><input type="radio" name="subscription" value="premium">Premium</label>
+                <label><input type="radio" name="subscription" value="ultimate">Ultimate</label>
+            </fieldset>
+        </div>
+        <div>
+            <!-- Checkbox for terms and conditions -->
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the <a href="#">terms and conditions</a>
+            </label>
+        </div>
+        <div>
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+        </div>
+        <div>
+            <!-- Output element for displaying validation messages -->
+            <output></output>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formatting</title>
+</head>
+
+<body>
+    <!--Abbrevation Tag-->
+
+    <p> Abbreavation Tag:-
+        <abbr title="Call Of Duty">COD</abbr>
+        is my favourite
+    </p>
+
+    <!--Address Tag-->
+    <address>
+        Address Tag: <a href="mailto:ritik@example.com">Ritik Prasad</a>.<br>
+        Example.com<br>
+        Mumbai
+        India
+    </address>
+
+    <!--Bidirection Isolation Tag-->
+    <bdi>Biderection Tag</bdi>
+    <br />
+
+    <!--Bidirectional Override Tag-->
+    <bdo dir='rtl'>
+        Biderection Override TAg
+    </bdo>
+
+    <!--blockquote -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        blockquote Tag
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+        works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+        globally.
+    </blockquote>
+
+    <!-- <cite>	Defines the title of a work -->
+
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+    <!-- Code Tag Define some text as computer code in a document: -->
+    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+    <!-- Del and ins Tag A text with a deleted part, and a new, inserted part: -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+    <!-- Definition Tag Mark up a term with <dfn>: -->
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <!--EM Tag Mark up emphasized text in a document: -->
+    <p>You <em>have</em> to hurry up!</p>
+    <p>We <em>cannot</em> live like this.</p>
+
+    <!-- Italic Tag -->
+    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+    <!-- Keyboard Tag -->
+    <kbd>Ctrl+shift</kbd>
+
+    <!-- Mark Tag -->
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+    <!-- Meter Tag-->
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.6">60%</meter>
+
+    <!-- Preformatted text: -->
+    <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+    </pre>
+
+    <!-- Progress Tag bar: -->
+    <progress id="file" value="32" max="100"> 32% </progress>
+
+    <!-- The <q> tag defines a short quotation. -->
+    <p></p>
+    <q>Build a future where people live in harmony with nature.</q>
+
+    <!-- Ruby Annotation Tag-->
+    <p>
+        <ruby>
+            漢 <rp>(</rp>
+            <rt>ㄏㄢˋ</rt>
+            <rp>)</rp>
+        </ruby>
+    </p>
+    <!-- The <rt> tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation. -->
+    <p>
+        <ruby>
+            漢 <rt> ㄏㄢˋ </rt>
+        </ruby>
+    </p>
+    <!--Mark up text that is no longer correct:-->
+    <p><s>Only 50 tickets left!</s></p>
+
+
+    <!-- The <samp> tag is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font. -->
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+    <!-- The <small> tag defines smaller text (like copyright and other side-comments). -->
+    <p><small>This is some smaller text.</small></p>
+
+    <!-- The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold. -->
+    <strong>This text is important!</strong>
+
+    <!-- The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O. -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]. -->
+    <p>Area of Square: r<sup>2</sup></p>
+
+    <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it: -->
+
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+        <h2>Flower</h2>
+        <img src="img_white_flower.jpg" width="214" height="204">
+    </template>
+
+    <script>
+        function showContent() {
+            let temp = document.getElementsByTagName("template")[0];
+            let clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+
+    <!-- The <time> tag defines a specific time (or datetime).
+    The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results. -->
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    <!-- The <u> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text. -->
+    <p>This is some <u>mispeled</u> text.</p>
+
+    <!-- The <var> tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic. -->
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is
+        the vertical height.</p>
+
+    <!-- The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break. -->
+
+    <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+</body>
+
+</html>

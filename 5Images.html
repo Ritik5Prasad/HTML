@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tags and SVG</title>
+</head>
+
+<body>
+
+    <!-- Image with all attributes -->
+    <img src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4="
+        alt="Description of the image" width="300" height="200" loading="lazy" decoding="async" usemap="#imagemap"
+        style="border: 1px solid black;">
+    <!-- This <img> tag displays an image from a local file named image.jpg. 
+         The width and height attributes specify the dimensions of the image in pixels. 
+         The loading attribute specifies lazy loading, meaning the image is loaded only 
+         when it comes into the viewport. The decoding attribute specifies asynchronous 
+         decoding of the image. The usemap attribute specifies an image map for the image. 
+         The style attribute adds a border around the image. -->
+
+    <!-- SVG Picture -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 2,78 340,18 120,128"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="20%" y1="30%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="20%" style="stop-color:rgb(194, 194, 170);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+    </svg>
+    <!-- This <svg> element draws a red circle with a black stroke. 
+         The circle is centered at (50,50) with a radius of 40 units. -->
+
+    <!-- Image map -->
+    <map name="imagemap">
+        <area shape="rect" coords="0,0,100,100" alt="Rectangle area" href="#rect">
+        <area shape="circle" coords="200,50,40" alt="Circle area" href="#circle">
+        <area shape="poly" coords="300,10,380,60,320,80,250,40" alt="Polygon area" href="#poly">
+    </map>
+    <!-- This <map> element defines an image map named "imagemap". 
+         It contains three <area> elements, each defining a clickable area on the image. 
+         The shape attribute specifies the shape of the area (rect, circle, or poly), 
+         coords attribute specifies the coordinates of the shape, alt attribute provides 
+         alternative text, and href attribute specifies the URL to navigate to when clicked. -->
+
+    <!-- Canvas element -->
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid black;"></canvas>
+    <!-- This <canvas> element creates a drawing surface with a width of 200 pixels 
+         and a height of 100 pixels. The style attribute adds a border around the canvas. -->
+
+</body>
+
+</html>

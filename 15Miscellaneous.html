@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+
+<h1>My First Emoji</h1>
+
+<p>&#128512;</p>
+
+</body>
+</html>
+
+<!-- A URL is another word for a web address.
+
+A URL can be composed of words (e.g. google.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50).
+
+Most people enter the name when surfing, because names are easier to remember than numbers.
+
+URL - Uniform Resource Locator
+Web browsers request pages from web servers by using a URL.
+
+A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+
+A web address like https://www.ritik.com/15Miscellaneous.html follows these syntax rules:
+
+scheme://prefix.domain:port/path/filename
+Explanation:
+
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like google.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+Common URL Schemes
+The table below lists some common schemes:
+
+Scheme	Short for	Used for
+http	HyperText Transfer Protocol	Common web pages. Not encrypted
+https	Secure HyperText Transfer Protocol	Secure web pages. Encrypted
+ftp	File Transfer Protocol	Downloading or uploading files
+file	 	A file on your computer
+ADVERTISEMENT
+URL Encoding
+URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.
+
+URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.
+
+URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+
+URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20. -->
+<!-- https://www.google.com/imgres?q=google%20images&imgurl=https%3A%2F%2Fblog.hubspot.com%2Fhs-fs%2Fhubfs%2Fimage8-2.jpg%3Fwidth%3D600%26name%3Dimage8-2.jpg&imgrefurl=https%3A%2F%2Fblog.hubspot.com%2Fmarketing%2Fgoogle-logo-history&docid=hEGKA2JoH-lywM&tbnid=bI7-ui1iO6yF-M&vet=12ahUKEwjLlcHDwIqFAxVuoGMGHaYQA68QM3oECBsQAA..i&w=600&h=300&hcb=2&ved=2ahUKEwjLlcHDwIqFAxVuoGMGHaYQA68QM3oECBsQAA
+// Globals in javascript that doesnt required any imports
+// encodeUri
+const originalURI = " https://example.com/search?q=helloworld";
+const encodedURI = encodeURI(originalURI);
+console.log(encodedURI); // "https://example.com/search?q=hello%20world"
+//decoderURi
+const decodedURI = decodeURI(encodedURI);
+console.log(decodedURI); // "https://example.com/search?q=hello world" -->
+
+<!-- HTML web storage; better than cookies.
+
+What is HTML Web Storage?
+With web storage, web applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+The storage capacity of Cookies is 4KB
+Data transfer to the server is exist
+Both clients and servers can read and write the cookies
+
+
+Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data. -->
+<!-- same for local -->
+<!-- setItem() Method – This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.
+sessionStorage.setItem(key, value)
+getIteam() Method – This method takes one parameter that is key which is used to get the value stored with a particular key name.
+sessionStorage.getItem(key)
+removeItem() Method – This is method is used to remove the value stored in the memory in reference to key.
+sessionStorage.removeItem(key)
+clear() Method – This method is used to clear all the values stored in the session storage
+sessionStorage.clear() -->
+<!-- Server-Sent Events - One Way Messaging
+A server-sent event is when a web page automatically gets updates from a server.
+
+This was also possible before, but the web page would have to ask if any updates were available. With server-sent events, the updates come automatically.
+
+Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc. -->

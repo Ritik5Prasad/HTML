@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio, Video, Source, and Track Elements</title>
+</head>
+<body>
+
+    <!-- Audio element -->
+    <audio autoplay controls>
+        <!-- Source element for audio -->
+        <source src="https://gumlet.sgp1.digitaloceanspaces.com/video/sample_1.aac" type="audio/mpeg">
+        <!-- Track element for subtitles or captions -->
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <!-- Fallback content for browsers that do not support audio or cannot play the audio -->
+        Your browser does not support the audio element.
+    </audio>
+    <!-- This <audio> element includes a control bar for playing, pausing, and adjusting the volume of the audio.
+         Inside the <audio> element, there's a <source> element specifying the audio file (audio.mp3) and its MIME type.
+         Additionally, there's a <track> element specifying subtitles in English (subtitles_en.vtt).
+         The text "Your browser does not support the audio element." serves as fallback content for unsupported browsers. -->
+
+    <!-- Video element -->
+    <video  width="400" controls >
+        <!-- Source elements for video -->
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"" type="video/mp4">
+        <!-- <source src="video.webm" type="video/webm"> -->
+        <!-- Track element for captions -->
+        <!-- <track src="captions_en.vtt" kind="captions" srclang="en" label="English"> -->
+        <!-- Fallback content for browsers that do not support video or cannot play the video -->
+        Your browser does not support the video element.
+    </video>
+    <!-- This <video> element includes a control bar for playing, pausing, adjusting volume, and seeking through the video.
+         Inside the <video> element, there are two <source> elements specifying different video formats (MP4 and WebM).
+         Additionally, there's a <track> element specifying captions in English (captions_en.vtt).
+         The text "Your browser does not support the video element." serves as fallback content for unsupported browsers. -->
+
+</body>
+</html>

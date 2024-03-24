@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tags</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table with Caption, Thead, Tbody, and Tfoot -->
+    <table>
+        <caption>Monthly Expenses</caption>
+        <!-- Table Head (Thead) -->
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <!-- Table Body (Tbody) -->
+        <tbody>
+            <tr>
+                <td>Food</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Transportation</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Utilities</td>
+                <td>$150</td>
+            </tr>
+        </tbody>
+        <!-- Table Foot (Tfoot) -->
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$450</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- The table above demonstrates the usage of various table-related elements:
+         - The caption element specifies the title of the table.
+         - The thead element contains the table header (th) rows.
+         - The tbody element contains the table body (td) rows.
+         - The tfoot element contains the table footer (td) rows.
+         - Each tr represents a table row.
+         - Each th represents a table header cell.
+         - Each td represents a table data cell.
+         - The style block adds some basic styling to the table, such as border, padding, and background color. -->
+
+    <!-- Colgroup and Col Elements -->
+    <table>
+        <colgroup>
+            <col style="background-color: #ec1111;">
+            <col style="background-color: #46cd10;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Food</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Transportation</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Utilities</td>
+                <td>$150</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- The table above demonstrates the usage of the colgroup and col elements:
+         - The colgroup element allows you to group together a set of columns and apply common properties to them.
+         - The col element specifies the properties for each column in the colgroup.
+         - Each col element is styled individually with background color. -->
+
+</body>
+</html>
